@@ -194,8 +194,8 @@ body {
   }
 }
 
-#main-visual {
-  width: 100%;
+#main-visual img {
+  max-width: 100%;
 }
 
 #contents {
@@ -310,9 +310,10 @@ body {
   .about-wrap .about-contents {
     display: block;
     margin-top: 24px;
+    margin: auto;
   }
   .about-wrap .name {
-    justify-content: center;
+    justify-content: left;
     border-right: none;
     margin-top: 22px;
     width: 85.33%;
@@ -483,7 +484,7 @@ body {
   display: flex;
   margin-top: 53px;
   position: relative;
-  height: 217px;
+  height: auto;
   justify-content: space-between;
 }
 .work-wrap .slider .slider-item {
@@ -496,13 +497,13 @@ body {
   max-width: 100%;
   margin-right: 2.35%;
   height: auto;
-  position: absolute;
   left: 0;
   top: 0;
 }
 .work-wrap .slider .slider-item img:last-of-type {
   opacity: 0;
   transition: opacity 0.7s;
+  position: absolute;
 }
 .work-wrap .slider .slider-item:hover img {
   opacity: 1;
@@ -523,12 +524,12 @@ body {
   .work-wrap .work-view img {
     height: auto;
     left: 0;
-    position: absolute;
     width: 100%;
   }
   .work-wrap .work-view img:last-of-type {
     opacity: 0;
     transition: opacity 0.7s;
+    position: absolute;
   }
   .work-wrap .work-view:hover img {
     opacity: 1;
@@ -549,6 +550,14 @@ body {
 @media screen and (max-width: 767px) {
   .work-wrap .slider .slider-item img {
     position: static;
+    height: auto;
+  }
+  .work-wrap .slider .slider-item img:first-of-type {
+    display: none;
+  }
+  .work-wrap .slider .slider-item img:last-of-type {
+    position: static;
+    opacity: 1;
   }
   .work-wrap .work-view img:first-of-type {
     display: none;
@@ -559,9 +568,9 @@ body {
   background-color: rgba(226, 225, 224, 0.7);
   border-radius: 37px;
   width: 82.34%;
-  height: 516px;
   margin: 0 auto;
   margin-top: 200px;
+  padding-bottom: 105px;
 }
 .contact-wrap h2 {
   padding-top: 80px;
@@ -583,10 +592,10 @@ body {
   .contact-wrap .contact-button img {
     height: auto;
     left: 0;
-    position: absolute;
     width: 100%;
   }
   .contact-wrap .contact-button img:last-of-type {
+    position: absolute;
     opacity: 0;
     transition: opacity 0.7s;
   }
@@ -1225,6 +1234,10 @@ h3 {
   max-width: 100%;
   margin-top: 50px;
 }
+.works-view-wrap .work-view-img img:first-of-type {
+  vertical-align: top;
+  max-width: 100%;
+}
 .works-view-wrap .work-view-link {
   display: flex;
   justify-content: space-between;
@@ -1329,7 +1342,9 @@ h3 {
   }
   .works-view-wrap .works-view-contents .works-view-item-wrap-sp {
     display: flex;
-    justify-content: center;
+    width: 30%;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   .works-view-wrap .works-view-contents .works-view-text {
     width: 85.33%;
