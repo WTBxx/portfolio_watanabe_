@@ -212,11 +212,11 @@ background-repeat: repeat;
 }
 
 .concept-wrap{
-    font-family: "Hannari","YuMincho","游明朝体","Yu Mincho","游明朝";
+    font-family: "YuMincho","游明朝体","Yu Mincho","游明朝";
     margin-top: -300px;
     h1{font-size: 38px;
     line-height: 1.58;
-margin-bottom: 61px;}
+    margin-bottom: 61px;}
     p{font-size: 20px;
     line-height: 2.00;}
     @media screen and (max-width: 767px){
@@ -235,6 +235,9 @@ margin-bottom: 61px;}
 
 .about-wrap{
     margin-top: 270px;
+    h2 img{
+        max-width: 100%;
+    }
     .about-contents{display: flex;
     justify-content: center;
     margin-top: 72px;}
@@ -264,7 +267,7 @@ margin-bottom: 61px;}
             height: auto;
             left: 0;
             position: absolute;
-            width: 100%;
+            max-width: 100%;
           }
         img:last-of-type {
             opacity: 0;
@@ -298,7 +301,7 @@ margin-bottom: 61px;}
             .about-text{
                 width: 85.33%;
                 margin: 25px 0 10px 0;}
-            img:first-of-type {
+            .about-view img:first-of-type {
                     display: none;
                 }}
     }
@@ -439,14 +442,18 @@ margin-bottom: 61px;}
         margin-top: 53px;
         position:relative;
         height: 217px;
+        justify-content: space-between;
         .slider-item{
+            position: relative;
+            width: 31.65%;
                 /*--ホバー--*/
-                margin-inline: auto;
                 img {
+                    max-width: 100%;
                     margin-right: 2.35%;
-                    width: 31.65%;
                     height: auto;
                     position: absolute;
+                    left: 0;
+                    top: 0;
                   }
                 img:last-of-type {
                     opacity: 0;
@@ -489,6 +496,9 @@ margin-bottom: 61px;}
         p{color: #757575;
         font-size: 10px;}}
         @media screen and (max-width: 767px){
+            .slider .slider-item img{
+                position: static;
+            }
         .work-view img:first-of-type {
             display: none;
         }}
@@ -634,7 +644,7 @@ margin-top: 200px;}
     width: 48%;
     height: 194px;
     img{
-        width: 28.57%;
+        max-width: 100%;
         margin: 35px 0 33px 4.11%;
     }
     .skill-text{
@@ -670,18 +680,17 @@ margin-top: 200px;}
             flex-wrap: nowrap;
         }
         .skill-contensts{
-            display: flex;
+            display: flex !important;
             margin-top: 46px;
             margin-right: 0;
             width: 80%;
-            height: 240px;
+            height: auto;
             img{
-                width: 28.67%;
                 margin: 47px 0 53px 4.11%;
             }
             .skill-text{
                 display: block;
-                margin: 0 7.33% 0 7%;
+                margin: auto 7.33% auto 7%;
                 h3{
                     font-size: 18px;
                 }
@@ -693,7 +702,7 @@ margin-top: 200px;}
             }
             .skill-text-ai,.skill-text-ps{
                 display: block;
-                margin: 0 7.33% 0 7%;
+                margin: auto 7.33% auto 7%;
                 h3{
                     font-size: 18px;
                 }
@@ -1035,7 +1044,7 @@ p{
             background-color: #fff;
         }
         img{
-            width: 100%;
+            max-width: 100%;
             &:hover{
                 opacity: 0.7;
                 filter: brightness(100%);}}
@@ -1113,6 +1122,7 @@ p{
     }
     .work-view-img{
         img{
+            max-width: 100%;
             margin-top: 50px;
         }
     }
@@ -1324,7 +1334,7 @@ p{
                       height: auto;
                       left: 0;
                       position: absolute;
-                      width: 100%;
+                      max-width: 100%;
                     }
                   img:last-of-type {
                       opacity: 0;

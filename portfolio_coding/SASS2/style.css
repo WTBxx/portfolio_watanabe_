@@ -211,7 +211,7 @@ body {
 }
 
 .concept-wrap {
-  font-family: "Hannari", "YuMincho", "游明朝体", "Yu Mincho", "游明朝";
+  font-family: "YuMincho", "游明朝体", "Yu Mincho", "游明朝";
   margin-top: -300px;
 }
 .concept-wrap h1 {
@@ -240,6 +240,9 @@ body {
 
 .about-wrap {
   margin-top: 270px;
+}
+.about-wrap h2 img {
+  max-width: 100%;
 }
 .about-wrap .about-contents {
   display: flex;
@@ -284,7 +287,7 @@ body {
     height: auto;
     left: 0;
     position: absolute;
-    width: 100%;
+    max-width: 100%;
   }
   .about-wrap .about-view img:last-of-type {
     opacity: 0;
@@ -327,7 +330,7 @@ body {
     width: 85.33%;
     margin: 25px 0 10px 0;
   }
-  .about-wrap img:first-of-type {
+  .about-wrap .about-view img:first-of-type {
     display: none;
   }
 }
@@ -481,17 +484,21 @@ body {
   margin-top: 53px;
   position: relative;
   height: 217px;
+  justify-content: space-between;
 }
 .work-wrap .slider .slider-item {
+  position: relative;
+  width: 31.65%;
   /*--ホバー--*/
-  margin-inline: auto;
   /*-----*/
 }
 .work-wrap .slider .slider-item img {
+  max-width: 100%;
   margin-right: 2.35%;
-  width: 31.65%;
   height: auto;
   position: absolute;
+  left: 0;
+  top: 0;
 }
 .work-wrap .slider .slider-item img:last-of-type {
   opacity: 0;
@@ -540,6 +547,9 @@ body {
   font-size: 10px;
 }
 @media screen and (max-width: 767px) {
+  .work-wrap .slider .slider-item img {
+    position: static;
+  }
   .work-wrap .work-view img:first-of-type {
     display: none;
   }
@@ -704,7 +714,7 @@ h3 {
   height: 194px;
 }
 .skill-wrap .skill-contensts img {
-  width: 28.57%;
+  max-width: 100%;
   margin: 35px 0 33px 4.11%;
 }
 .skill-wrap .skill-contensts .skill-text {
@@ -741,19 +751,18 @@ h3 {
     flex-wrap: nowrap;
   }
   .skill-wrap .skill-contensts {
-    display: flex;
+    display: flex !important;
     margin-top: 46px;
     margin-right: 0;
     width: 80%;
-    height: 240px;
+    height: auto;
   }
   .skill-wrap .skill-contensts img {
-    width: 28.67%;
     margin: 47px 0 53px 4.11%;
   }
   .skill-wrap .skill-contensts .skill-text {
     display: block;
-    margin: 0 7.33% 0 7%;
+    margin: auto 7.33% auto 7%;
   }
   .skill-wrap .skill-contensts .skill-text h3 {
     font-size: 18px;
@@ -765,7 +774,7 @@ h3 {
   }
   .skill-wrap .skill-contensts .skill-text-ai, .skill-wrap .skill-contensts .skill-text-ps {
     display: block;
-    margin: 0 7.33% 0 7%;
+    margin: auto 7.33% auto 7%;
   }
   .skill-wrap .skill-contensts .skill-text-ai h3, .skill-wrap .skill-contensts .skill-text-ps h3 {
     font-size: 18px;
@@ -1134,7 +1143,7 @@ h3 {
   background-color: #fff;
 }
 .works-wrap .works-contents img {
-  width: 100%;
+  max-width: 100%;
 }
 .works-wrap .works-contents img:hover {
   opacity: 0.7;
@@ -1213,6 +1222,7 @@ h3 {
   line-height: 2.333;
 }
 .works-view-wrap .work-view-img img {
+  max-width: 100%;
   margin-top: 50px;
 }
 .works-view-wrap .work-view-link {
@@ -1427,7 +1437,7 @@ h3 {
     height: auto;
     left: 0;
     position: absolute;
-    width: 100%;
+    max-width: 100%;
   }
   .thankspage-button img:last-of-type {
     opacity: 0;
