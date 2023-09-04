@@ -78,7 +78,7 @@ background-repeat: repeat;
 
 .toppagebutton-wrap{
     position: fixed;
-    width: 4.9%;
+    width: 3%;
     top: 0;
     right: 0;
 
@@ -236,25 +236,23 @@ background-repeat: repeat;
     margin-top: -300px;
     
     h1{
-        font-size: 38px;
+        font-size: 3.66vw;
         line-height: 1.58;
         margin-bottom: 61px;}
 
     p{
-        font-size: 20px;
+        font-size: 1.93vw;
         line-height: 2.00;}
 
     @media screen and (max-width: 767px){
         margin-top: auto;
 
         h1{
-            font-size: 28px;
             line-height: 2.191;
             margin-bottom: 44px;
         }
 
         p{
-            font-size: $font-size-sp;
             line-height: 2;
         }}}
 
@@ -277,10 +275,11 @@ background-repeat: repeat;
         padding-right: 2.32%;}
 
     h3{
-        font-size: 25px;
+        font-size: 1.83vw;
         margin: 74px 1.46% 73px 0;}
 
     .name p{
+        font-size: 1.09vw;
         color: #757575;
         margin: 81px 4.83% 81px 0;}
 
@@ -295,9 +294,6 @@ background-repeat: repeat;
         height: 28px;
         position:relative;
         float: right;
-
-        /*--ホバー--*/
-        @media (hover: hover) and (pointer: fine){
         margin-inline: auto;
 
         img {
@@ -314,9 +310,7 @@ background-repeat: repeat;
 
           &:hover img{
             opacity: 1;
-          }}
-
-          /*-----*/
+          }
 
         margin-top: 34px;
 
@@ -328,8 +322,14 @@ background-repeat: repeat;
             color: #757575;
             font-size: 10px;}}
 
-        @media screen and (max-width: 767px){
+        @media screen and (max-width: 1024px){
+            .about-view{
+            img:last-of-type {
+                opacity: 1;
+            }}
+        }
 
+        @media screen and (max-width: 900px){
             .about-contents{
                 display: block;
                 margin-top: 24px;
@@ -343,8 +343,7 @@ background-repeat: repeat;
                 width: 85.33%; 
                 padding-right: 0;}
 
-            h3{
-                font-size: 20px;
+            h3{ 
                 margin: 0 4% 0 0;}
 
             .name p{
@@ -354,6 +353,9 @@ background-repeat: repeat;
             .about-text{
                 width: 85.33%;
                 margin: 25px 0 10px 0;}
+        }
+
+        @media screen and (max-width: 767px){
 
             .about-view img:first-of-type {
                     display: none;
@@ -370,80 +372,69 @@ background-repeat: repeat;
         justify-content: center;
 
         .service1{
-            height: 486px;
-            position: relative;
-
             .service-flame{
+                position: relative;
                 width: 100%;
                 opacity: 0; transition: all 2s/*処理にかかる時間*/;
                 &.done{opacity : 1; transform : translate(0, 0);}
+
+                .service-text1{
+                    position: absolute;
+                    width: 46.8%;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    line-height: $line-height;
+        
+                    h3{
+                        font-size: 25px;
+                    }
+        
+                    p{
+                        text-align: left;
+                    }}
             }
-
-            .service-text1{
-            position: absolute;
-            width: 46.8%;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            line-height: $line-height;
-
-            h3{
-                font-size: 25px;
-            }
-
-            p{
-                text-align: left;
-            }}}
 
             .design-img1{
                 position: absolute;
                 bottom: 10px;
-                right: 25%;                ;
-                width: 21.83%;
+                right: 25%;
             }
 
-        .service2{
-            height: 486px;
-            position: relative;
+}
 
+        .service2{
             .service-flame{
+                position: relative;
                 width: 100%;
                 opacity: 0; transition: all 2s/*処理にかかる時間*/;
                 &.done{opacity : 1; transform : translate(0, 0);}
-            }
+                .service-text2{
+                    position: absolute;
+                    width: 46.8%;
+                    top:50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    line-height: $line-height;
+    
+                h3{
+                    font-size: 25px;
+                }
+    
+                p{
+                    text-align: left;
+                }}
+    
+                .design-img2{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 25%;    
+                }
+            }      
+}
+}
 
-            h3{
-                font-size: 25px;
-            }
-
-            p{
-                text-align: left;
-            }}
-
-            .service-text2{
-                position: absolute;
-                width: 46.8%;
-                top:50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                line-height: $line-height;
-
-            h3{
-                font-size: 25px;
-            }
-
-            p{
-                text-align: left;
-            }}
-
-            .design-img2{
-                position: absolute;
-                bottom: 10px;
-                right: 25%;    
-                width: 20.31%;
-            }}
-
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 1024px){
         .service-contents{
             display: block;
             justify-content: center;
@@ -553,29 +544,23 @@ background-repeat: repeat;
         height: 28px;
         position:relative;
         float: right;
+        margin-inline: auto;
 
-               /*--ホバー--*/
-
-               @media (hover: hover) and (pointer: fine){
-               margin-inline: auto;
-
-               img {
-                   height: auto;
-                   left: 0;
-                   width: 100%;
+            img {
+                 height: auto;
+                 left: 0;
+                 width: 100%;
                  }
 
-               img:last-of-type {
-                   opacity: 0;
-                   transition: opacity .7s;
-                   position: absolute;
+            img:last-of-type {
+                 opacity: 0;
+                 transition: opacity .7s;
+                 position: absolute;
                  }
 
-                 &:hover img{
-                   opacity: 1;
-                 }}
-
-                 /*-----*/
+             &:hover img{
+                 opacity: 1;
+                 }
 
         img{
             width: 100%;
@@ -592,6 +577,12 @@ background-repeat: repeat;
         p{
             color: #757575;
             font-size: 10px;
+        }
+    
+        @media screen and (max-width: 1024px){
+                img:last-of-type {
+                    opacity: 1;
+                }
         }}
 
         @media screen and (max-width: 767px){
@@ -638,12 +629,10 @@ background-repeat: repeat;
 
             a{
                 display: block;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
             }
-
-                          /*--ホバー--*/
-
-                          @media (hover: hover) and (pointer: fine){
-                          margin-inline: auto;
 
                           img {
                               height: auto;
@@ -659,9 +648,7 @@ background-repeat: repeat;
 
                             &:hover img{
                               opacity: 1;
-                            }}
-
-                            /*-----*/
+                            }
 
         .contact-text{
             position: absolute;
@@ -670,6 +657,13 @@ background-repeat: repeat;
             width: 300px;
         }}
 
+        @media screen and (max-width: 1024px){
+            .contact-button{
+            img:last-of-type {
+                opacity: 1;
+            }}
+    }
+        
     @media screen and (max-width: 767px){
         .contact-button img:first-of-type {
             display: none;
@@ -725,7 +719,8 @@ h3{
     line-height: $line-height;
 }
 .name-photo-pc{width: 467px;}}
-@media screen and (max-width: 767px){
+
+@media screen and (max-width: 1024px){
     display: block;
     margin-top: 58px;
     .name-photo-sp{
@@ -804,9 +799,7 @@ margin-top: 200px;}
     }
 }
 }
-@media screen and (max-width: 800px){
-    h2{font-size: 20px;
-        margin-top: 130px;}
+@media screen and (max-width: 1024px){
         .skill{
             display: block;
             flex-wrap: nowrap;
@@ -845,6 +838,11 @@ margin-top: 200px;}
             }
         }
         }
+}
+
+@media screen and (max-width: 767px){
+    h2{font-size: 20px;
+        margin-top: 130px;}
 }}
 
 .still-wrap{
@@ -899,9 +897,11 @@ margin-top: 200px;}
         .forte1{
             position: relative;
             .forte-flame{
-                width: 100%;
                 opacity: 0; transition: all 2s/*処理にかかる時間*/;
                 &.done{opacity : 1; transform : translate(0, 0);}
+                img{
+                    max-width: 100%;
+                }
             }
         .forte-text{
             position: absolute;
@@ -927,9 +927,11 @@ p{
 .forte2{
     position: relative;
     .forte-flame{
-        width: 100%;
         opacity: 0; transition: all 2s/*処理にかかる時間*/;
         &.done{opacity : 1; transform : translate(0, 0);}
+        img{
+            max-width: 100%;
+        }
     }
     .forte-text{
     position: absolute;
@@ -952,10 +954,7 @@ p{
     right: 15%;    
     width: 20.31%;
 }}}
-@media screen and (max-width: 767px){
-    h2{
-        margin-top: 130px;
-    }
+@media screen and (max-width: 1024px){
     .forte-contents{
         display: block;
         .forte1{
@@ -997,6 +996,12 @@ p{
     width: 29.33%;
 }}}
 }
+
+@media screen and (max-width: 767px){
+    h2{
+        margin-top: 130px;
+    }
+}
 }
 
 .favorite-wrap{
@@ -1008,9 +1013,11 @@ p{
         .favorite1{
             position: relative;
             .favorite-flame{
-                width: 100%;
                 opacity: 0; transition: all 2s/*処理にかかる時間*/;
                 &.done{opacity : 1; transform : translate(0, 0);}
+                img{
+                    max-width: 100%;
+                }
             }
         .favorite-text{
             position: absolute;
@@ -1036,9 +1043,11 @@ p{
 .favorite2{
     position: relative;
     .favorite-flame{
-        width: 100%;
         opacity: 0; transition: all 2s/*処理にかかる時間*/;
         &.done{opacity : 1; transform : translate(0, 0);}
+        img{
+            max-width: 100%;
+        }
     }
     .favorite-text{
     position: absolute;
@@ -1061,10 +1070,7 @@ p{
     right: 0;  
     width: 34.51%;
     }}}
-    @media screen and (max-width: 767px){
-        h2{
-            margin-top: 130px;
-        }
+    @media screen and (max-width: 1024px){
         .favorite-contents{
             display: block;
             .favorite1{
@@ -1105,6 +1111,12 @@ p{
         left: 0;
         width: 21.33%;
         }}}
+    }
+
+    @media screen and (max-width: 767px){
+        h2{
+            margin-top: 130px;
+        }
     }
 }
 
@@ -1405,14 +1417,12 @@ p{
         background-color: #fff;
         border-radius: 0.2em;
         padding: 0.5em;
+        width: 43.92%;
         }
     .contactpage-button{
         width: 300px;
         margin: 93px 276px 0 276px;
         position:relative;
-                      /*--ホバー--*/
-                      @media (hover: hover) and (pointer: fine){
-                      margin-inline: auto;
                       img {
                           height: auto;
                           left: 0;
@@ -1425,8 +1435,7 @@ p{
                         }
                         &:hover img{
                           opacity: 1;
-                        }}
-                        /*-----*/
+                        }
         a{
             display: block;
         }
@@ -1441,6 +1450,14 @@ p{
         margin-bottom: 80px;
         line-height: $line-height;
     }
+
+    @media screen and (max-width: 1024px){
+        .contactpage-button{
+        img:last-of-type {
+            opacity: 1;
+        }}
+}
+
     @media screen and (max-width: 767px){
         .contactpage-button img:first-of-type {
             display: none;
@@ -1470,9 +1487,6 @@ p{
     width: 300px;
     margin: 93px 276px 0 276px;
     position:relative;
-                  /*--ホバー--*/
-                  @media (hover: hover) and (pointer: fine){
-                  margin-inline: auto;
                   img {
                       height: auto;
                       left: 0;
@@ -1485,8 +1499,7 @@ p{
                     }
                     &:hover img{
                       opacity: 1;
-                    }}
-                    /*-----*/
+                    }
     a{
         display: block;
     }
@@ -1495,6 +1508,13 @@ p{
     top:14px;
     width: 300px;
 }
+
+@media screen and (max-width: 1024px){
+    img:last-of-type {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 767px){
     img:first-of-type {
         display: none;

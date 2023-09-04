@@ -1,6 +1,6 @@
-//!--スライダー//
 
-<script>
+//!--スライダー
+
     $(function () {
         // ローダー終了
         function end_loader() {
@@ -78,4 +78,3 @@
             }
         });
     }
-</script>

@@ -72,7 +72,7 @@ body {
 
 .toppagebutton-wrap {
   position: fixed;
-  width: 4.9%;
+  width: 3%;
   top: 0;
   right: 0;
 }
@@ -215,12 +215,12 @@ body {
   margin-top: -300px;
 }
 .concept-wrap h1 {
-  font-size: 38px;
+  font-size: 3.66vw;
   line-height: 1.58;
   margin-bottom: 61px;
 }
 .concept-wrap p {
-  font-size: 20px;
+  font-size: 1.93vw;
   line-height: 2;
 }
 @media screen and (max-width: 767px) {
@@ -228,12 +228,10 @@ body {
     margin-top: auto;
   }
   .concept-wrap h1 {
-    font-size: 28px;
     line-height: 2.191;
     margin-bottom: 44px;
   }
   .concept-wrap p {
-    font-size: 14px;
     line-height: 2;
   }
 }
@@ -257,10 +255,11 @@ body {
   padding-right: 2.32%;
 }
 .about-wrap h3 {
-  font-size: 25px;
+  font-size: 1.83vw;
   margin: 74px 1.46% 73px 0;
 }
 .about-wrap .name p {
+  font-size: 1.09vw;
   color: #757575;
   margin: 81px 4.83% 81px 0;
 }
@@ -275,27 +274,21 @@ body {
   height: 28px;
   position: relative;
   float: right;
-  /*--ホバー--*/
-  /*-----*/
+  margin-inline: auto;
   margin-top: 34px;
 }
-@media (hover: hover) and (pointer: fine) {
-  .about-wrap .about-view {
-    margin-inline: auto;
-  }
-  .about-wrap .about-view img {
-    height: auto;
-    left: 0;
-    position: absolute;
-    max-width: 100%;
-  }
-  .about-wrap .about-view img:last-of-type {
-    opacity: 0;
-    transition: opacity 0.7s;
-  }
-  .about-wrap .about-view:hover img {
-    opacity: 1;
-  }
+.about-wrap .about-view img {
+  height: auto;
+  left: 0;
+  position: absolute;
+  max-width: 100%;
+}
+.about-wrap .about-view img:last-of-type {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.about-wrap .about-view:hover img {
+  opacity: 1;
 }
 .about-wrap .about-view .about-view-text {
   position: absolute;
@@ -306,7 +299,12 @@ body {
   color: #757575;
   font-size: 10px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
+  .about-wrap .about-view img:last-of-type {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 900px) {
   .about-wrap .about-contents {
     display: block;
     margin-top: 24px;
@@ -320,7 +318,6 @@ body {
     padding-right: 0;
   }
   .about-wrap h3 {
-    font-size: 20px;
     margin: 0 4% 0 0;
   }
   .about-wrap .name p {
@@ -331,6 +328,8 @@ body {
     width: 85.33%;
     margin: 25px 0 10px 0;
   }
+}
+@media screen and (max-width: 767px) {
   .about-wrap .about-view img:first-of-type {
     display: none;
   }
@@ -346,11 +345,8 @@ body {
   display: flex;
   justify-content: center;
 }
-.service-wrap .service-contents .service1 {
-  height: 486px;
-  position: relative;
-}
 .service-wrap .service-contents .service1 .service-flame {
+  position: relative;
   width: 100%;
   opacity: 0;
   transition: all 2s;
@@ -359,7 +355,7 @@ body {
   opacity: 1;
   transform: translate(0, 0);
 }
-.service-wrap .service-contents .service1 .service-text1 {
+.service-wrap .service-contents .service1 .service-flame .service-text1 {
   position: absolute;
   width: 46.8%;
   top: 50%;
@@ -367,23 +363,19 @@ body {
   transform: translate(-50%, -50%);
   line-height: 2.333;
 }
-.service-wrap .service-contents .service1 .service-text1 h3 {
+.service-wrap .service-contents .service1 .service-flame .service-text1 h3 {
   font-size: 25px;
 }
-.service-wrap .service-contents .service1 .service-text1 p {
+.service-wrap .service-contents .service1 .service-flame .service-text1 p {
   text-align: left;
 }
-.service-wrap .service-contents .design-img1 {
+.service-wrap .service-contents .service1 .design-img1 {
   position: absolute;
   bottom: 10px;
   right: 25%;
-  width: 21.83%;
-}
-.service-wrap .service-contents .service2 {
-  height: 486px;
-  position: relative;
 }
 .service-wrap .service-contents .service2 .service-flame {
+  position: relative;
   width: 100%;
   opacity: 0;
   transition: all 2s;
@@ -392,13 +384,7 @@ body {
   opacity: 1;
   transform: translate(0, 0);
 }
-.service-wrap .service-contents .service2 h3 {
-  font-size: 25px;
-}
-.service-wrap .service-contents .service2 p {
-  text-align: left;
-}
-.service-wrap .service-contents .service-text2 {
+.service-wrap .service-contents .service2 .service-flame .service-text2 {
   position: absolute;
   width: 46.8%;
   top: 50%;
@@ -406,19 +392,18 @@ body {
   transform: translate(-50%, -50%);
   line-height: 2.333;
 }
-.service-wrap .service-contents .service-text2 h3 {
+.service-wrap .service-contents .service2 .service-flame .service-text2 h3 {
   font-size: 25px;
 }
-.service-wrap .service-contents .service-text2 p {
+.service-wrap .service-contents .service2 .service-flame .service-text2 p {
   text-align: left;
 }
-.service-wrap .service-contents .design-img2 {
+.service-wrap .service-contents .service2 .service-flame .design-img2 {
   position: absolute;
   bottom: 10px;
   right: 25%;
-  width: 20.31%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .service-wrap .service-contents {
     display: block;
     justify-content: center;
@@ -516,27 +501,21 @@ body {
   height: 28px;
   position: relative;
   float: right;
-  /*--ホバー--*/
-  /*-----*/
+  margin-inline: auto;
   margin-top: 34px;
 }
-@media (hover: hover) and (pointer: fine) {
-  .work-wrap .work-view {
-    margin-inline: auto;
-  }
-  .work-wrap .work-view img {
-    height: auto;
-    left: 0;
-    width: 100%;
-  }
-  .work-wrap .work-view img:last-of-type {
-    opacity: 0;
-    transition: opacity 0.7s;
-    position: absolute;
-  }
-  .work-wrap .work-view:hover img {
-    opacity: 1;
-  }
+.work-wrap .work-view img {
+  height: auto;
+  left: 0;
+  width: 100%;
+}
+.work-wrap .work-view img:last-of-type {
+  opacity: 0;
+  transition: opacity 0.7s;
+  position: absolute;
+}
+.work-wrap .work-view:hover img {
+  opacity: 1;
 }
 .work-wrap .work-view img {
   width: 100%;
@@ -549,6 +528,11 @@ body {
 .work-wrap .work-view p {
   color: #757575;
   font-size: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .work-wrap .work-view img:last-of-type {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 767px) {
   .work-wrap .slider .slider-item img {
@@ -585,35 +569,36 @@ body {
   width: 300px;
   margin: 93px 276px 0 276px;
   position: relative;
-  /*--ホバー--*/
-  /*-----*/
 }
 .contact-wrap .contact-button a {
   display: block;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
-@media (hover: hover) and (pointer: fine) {
-  .contact-wrap .contact-button {
-    margin-inline: auto;
-  }
-  .contact-wrap .contact-button img {
-    height: auto;
-    left: 0;
-    width: 100%;
-  }
-  .contact-wrap .contact-button img:last-of-type {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.7s;
-  }
-  .contact-wrap .contact-button:hover img {
-    opacity: 1;
-  }
+.contact-wrap .contact-button img {
+  height: auto;
+  left: 0;
+  width: 100%;
+}
+.contact-wrap .contact-button img:last-of-type {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.contact-wrap .contact-button:hover img {
+  opacity: 1;
 }
 .contact-wrap .contact-button .contact-text {
   position: absolute;
   top: 14px;
   left: 0;
   width: 300px;
+}
+@media screen and (max-width: 1024px) {
+  .contact-wrap .contact-button img:last-of-type {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 767px) {
   .contact-wrap .contact-button img:first-of-type {
@@ -673,7 +658,7 @@ h3 {
 .name-wrap .name .name-photo-pc {
   width: 467px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .name-wrap {
     display: block;
     margin-top: 58px;
@@ -757,11 +742,7 @@ h3 {
   text-align: left;
   line-height: 2.333;
 }
-@media screen and (max-width: 800px) {
-  .skill-wrap h2 {
-    font-size: 20px;
-    margin-top: 130px;
-  }
+@media screen and (max-width: 1024px) {
   .skill-wrap .skill {
     display: block;
     flex-wrap: nowrap;
@@ -799,6 +780,12 @@ h3 {
     margin-top: 20px;
     text-align: left;
     line-height: 2.333;
+  }
+}
+@media screen and (max-width: 767px) {
+  .skill-wrap h2 {
+    font-size: 20px;
+    margin-top: 130px;
   }
 }
 
@@ -853,13 +840,15 @@ h3 {
   position: relative;
 }
 .forte-wrap .forte-contents .forte1 .forte-flame {
-  width: 100%;
   opacity: 0;
   transition: all 2s;
 }
 .forte-wrap .forte-contents .forte1 .forte-flame.done {
   opacity: 1;
   transform: translate(0, 0);
+}
+.forte-wrap .forte-contents .forte1 .forte-flame img {
+  max-width: 100%;
 }
 .forte-wrap .forte-contents .forte1 .forte-text {
   position: absolute;
@@ -887,13 +876,15 @@ h3 {
   position: relative;
 }
 .forte-wrap .forte-contents .forte2 .forte-flame {
-  width: 100%;
   opacity: 0;
   transition: all 2s;
 }
 .forte-wrap .forte-contents .forte2 .forte-flame.done {
   opacity: 1;
   transform: translate(0, 0);
+}
+.forte-wrap .forte-contents .forte2 .forte-flame img {
+  max-width: 100%;
 }
 .forte-wrap .forte-contents .forte2 .forte-text {
   position: absolute;
@@ -917,10 +908,7 @@ h3 {
   right: 15%;
   width: 20.31%;
 }
-@media screen and (max-width: 767px) {
-  .forte-wrap h2 {
-    margin-top: 130px;
-  }
+@media screen and (max-width: 1024px) {
   .forte-wrap .forte-contents {
     display: block;
   }
@@ -967,6 +955,11 @@ h3 {
     width: 29.33%;
   }
 }
+@media screen and (max-width: 767px) {
+  .forte-wrap h2 {
+    margin-top: 130px;
+  }
+}
 
 .favorite-wrap h2 {
   margin-top: 200px;
@@ -978,13 +971,15 @@ h3 {
   position: relative;
 }
 .favorite-wrap .favorite-contents .favorite1 .favorite-flame {
-  width: 100%;
   opacity: 0;
   transition: all 2s;
 }
 .favorite-wrap .favorite-contents .favorite1 .favorite-flame.done {
   opacity: 1;
   transform: translate(0, 0);
+}
+.favorite-wrap .favorite-contents .favorite1 .favorite-flame img {
+  max-width: 100%;
 }
 .favorite-wrap .favorite-contents .favorite1 .favorite-text {
   position: absolute;
@@ -1012,13 +1007,15 @@ h3 {
   position: relative;
 }
 .favorite-wrap .favorite-contents .favorite2 .favorite-flame {
-  width: 100%;
   opacity: 0;
   transition: all 2s;
 }
 .favorite-wrap .favorite-contents .favorite2 .favorite-flame.done {
   opacity: 1;
   transform: translate(0, 0);
+}
+.favorite-wrap .favorite-contents .favorite2 .favorite-flame img {
+  max-width: 100%;
 }
 .favorite-wrap .favorite-contents .favorite2 .favorite-text {
   position: absolute;
@@ -1042,10 +1039,7 @@ h3 {
   right: 0;
   width: 34.51%;
 }
-@media screen and (max-width: 767px) {
-  .favorite-wrap h2 {
-    margin-top: 130px;
-  }
+@media screen and (max-width: 1024px) {
   .favorite-wrap .favorite-contents {
     display: block;
   }
@@ -1090,6 +1084,11 @@ h3 {
     top: 0;
     left: 0;
     width: 21.33%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .favorite-wrap h2 {
+    margin-top: 130px;
   }
 }
 
@@ -1388,31 +1387,25 @@ h3 {
   background-color: #fff;
   border-radius: 0.2em;
   padding: 0.5em;
+  width: 43.92%;
 }
 .contactpage-wrap .contactpage-button {
   width: 300px;
   margin: 93px 276px 0 276px;
   position: relative;
-  /*--ホバー--*/
-  /*-----*/
 }
-@media (hover: hover) and (pointer: fine) {
-  .contactpage-wrap .contactpage-button {
-    margin-inline: auto;
-  }
-  .contactpage-wrap .contactpage-button img {
-    height: auto;
-    left: 0;
-    position: absolute;
-    width: 100%;
-  }
-  .contactpage-wrap .contactpage-button img:last-of-type {
-    opacity: 0;
-    transition: opacity 0.7s;
-  }
-  .contactpage-wrap .contactpage-button:hover img {
-    opacity: 1;
-  }
+.contactpage-wrap .contactpage-button img {
+  height: auto;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.contactpage-wrap .contactpage-button img:last-of-type {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.contactpage-wrap .contactpage-button:hover img {
+  opacity: 1;
 }
 .contactpage-wrap .contactpage-button a {
   display: block;
@@ -1426,6 +1419,11 @@ h3 {
 .contactpage-wrap .contactpage-text {
   margin-bottom: 80px;
   line-height: 2.333;
+}
+@media screen and (max-width: 1024px) {
+  .contactpage-wrap .contactpage-button img:last-of-type {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 767px) {
   .contactpage-wrap .contactpage-button img:first-of-type {
@@ -1455,26 +1453,19 @@ h3 {
   width: 300px;
   margin: 93px 276px 0 276px;
   position: relative;
-  /*--ホバー--*/
-  /*-----*/
 }
-@media (hover: hover) and (pointer: fine) {
-  .thankspage-button {
-    margin-inline: auto;
-  }
-  .thankspage-button img {
-    height: auto;
-    left: 0;
-    position: absolute;
-    max-width: 100%;
-  }
-  .thankspage-button img:last-of-type {
-    opacity: 0;
-    transition: opacity 0.7s;
-  }
-  .thankspage-button:hover img {
-    opacity: 1;
-  }
+.thankspage-button img {
+  height: auto;
+  left: 0;
+  position: absolute;
+  max-width: 100%;
+}
+.thankspage-button img:last-of-type {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.thankspage-button:hover img {
+  opacity: 1;
 }
 .thankspage-button a {
   display: block;
@@ -1483,6 +1474,11 @@ h3 {
   position: absolute;
   top: 14px;
   width: 300px;
+}
+@media screen and (max-width: 1024px) {
+  .thankspage-button img:last-of-type {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 767px) {
   .thankspage-button img:first-of-type {
