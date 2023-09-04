@@ -168,7 +168,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
   }
   .sp-nav ul {
     height: 100%;
@@ -200,7 +200,7 @@ body {
 
 #contents {
   width: 75.84%;
-  margin-left: 325px;
+  margin-left: auto;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
@@ -258,7 +258,7 @@ body {
 }
 .about-wrap h3 {
   font-size: 25px;
-  margin: 74px 0 73px 0;
+  margin: 74px 1.46% 73px 0;
 }
 .about-wrap .name p {
   color: #757575;
@@ -338,6 +338,9 @@ body {
 
 .service-wrap {
   margin-top: 200px;
+}
+.service-wrap img {
+  max-width: 100%;
 }
 .service-wrap .service-contents {
   display: flex;
@@ -479,6 +482,7 @@ body {
 
 .work-wrap {
   margin-top: 205px;
+  /*-----*/
 }
 .work-wrap .slider {
   display: flex;
@@ -491,7 +495,6 @@ body {
   position: relative;
   width: 31.65%;
   /*--ホバー--*/
-  /*-----*/
 }
 .work-wrap .slider .slider-item img {
   max-width: 100%;
@@ -584,6 +587,9 @@ body {
   position: relative;
   /*--ホバー--*/
   /*-----*/
+}
+.contact-wrap .contact-button a {
+  display: block;
 }
 @media (hover: hover) and (pointer: fine) {
   .contact-wrap .contact-button {
@@ -720,11 +726,12 @@ h3 {
   background-color: rgba(226, 225, 224, 0.7);
   border-radius: 37px;
   width: 48%;
-  height: 194px;
+  height: auto;
 }
 .skill-wrap .skill-contensts img {
   max-width: 100%;
-  margin: 35px 0 33px 4.11%;
+  height: auto;
+  margin: auto 0 auto 4.11%;
 }
 .skill-wrap .skill-contensts .skill-text {
   display: block;
@@ -1186,6 +1193,10 @@ h3 {
 .works-view-wrap {
   margin-top: 95px;
 }
+.works-view-wrap img {
+  max-width: 100%;
+  margin-right: 5%;
+}
 .works-view-wrap h2 {
   font-size: 30px;
   margin-top: 32px;
@@ -1403,6 +1414,9 @@ h3 {
     opacity: 1;
   }
 }
+.contactpage-wrap .contactpage-button a {
+  display: block;
+}
 .contactpage-wrap .contactpage-button .contactpage-button--text {
   position: absolute;
   top: 14px;
@@ -1461,6 +1475,9 @@ h3 {
   .thankspage-button:hover img {
     opacity: 1;
   }
+}
+.thankspage-button a {
+  display: block;
 }
 .thankspage-button .thankspage-button-text {
   position: absolute;
