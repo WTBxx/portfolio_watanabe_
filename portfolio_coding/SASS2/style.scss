@@ -195,12 +195,13 @@ background-repeat: repeat;
         }
 
         .sp-nav{
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100vh;
             background: rgba(255, 255, 255, 0.8);
+            z-index: 9000;
 
             ul{
                 height: 100%;
@@ -241,7 +242,7 @@ background-repeat: repeat;
     text-align: center;
 
     @media screen and (max-width: 767px){
-        margin-left: auto;
+        margin: 0 auto;
         width: 94.67% ;
     }
 }
@@ -267,12 +268,12 @@ background-repeat: repeat;
         h1{
             line-height: 2.191;
             margin-bottom: 44px;
-            font-size: 28px
+            font-size: 28px;
         }
 
         p{
             line-height: 2;
-            font-size: 14px
+            font-size: 14px;
         }
     }
 }
@@ -690,7 +691,7 @@ background-repeat: repeat;
             img {
                 height: auto;
                 left: 0;
-                width: 100%;
+                max-width: 100%;
             }
 
             img:last-of-type {
@@ -1345,8 +1346,7 @@ p{
 
 .works-view-wrap{
     margin-top: 95px;
-    img{max-width: 100%;
-    margin-right: 5%;}
+    img{max-width: 100%;}
     h2{
         font-size: 30px;
         margin-top: 32px;
@@ -1470,6 +1470,7 @@ p{
 
     }
     @media screen and (max-width: 767px){
+        margin: auto;
         h2{
             font-size: 22px;
             margin-top: 10px;
@@ -1505,13 +1506,12 @@ p{
             }
             .works-view-item-wrap-sp{
                 display: flex;
-                width: 30%;
+                width: 50%;
                 justify-content: space-between;
                 margin: 0 auto;
             }
             .works-view-text{
                 width: 85.33%;
-                margin-left: auto;
                 line-height: $line-height;
             }
         }
