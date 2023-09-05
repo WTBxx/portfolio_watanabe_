@@ -79,6 +79,11 @@ body {
   top: 0;
   right: 0;
 }
+@media screen and (max-width: 767px) {
+  .toppagebutton-wrap {
+    width: 6%;
+  }
+}
 .toppagebutton-wrap .toppagebutton {
   writing-mode: vertical-rl;
   margin-top: 500px;
@@ -234,9 +239,11 @@ body {
   .concept-wrap h1 {
     line-height: 2.191;
     margin-bottom: 44px;
+    font-size: 28px;
   }
   .concept-wrap p {
     line-height: 2;
+    font-size: 14px;
   }
 }
 
@@ -323,10 +330,12 @@ body {
   }
   .about-wrap h3 {
     margin: 0 4% 0 0;
+    font-size: 20px;
   }
   .about-wrap .name p {
     margin: 0;
     border-right: none;
+    font-size: 14px;
   }
   .about-wrap .about-text {
     width: 85.33%;
@@ -377,8 +386,8 @@ body {
 }
 .service-wrap .service-contents .service1 .design-img1 {
   position: absolute;
-  bottom: 10px;
-  right: 25%;
+  bottom: -45px;
+  right: 0;
 }
 .service-wrap .service-contents .service2 .service-flame {
   position: relative;
@@ -408,8 +417,8 @@ body {
 }
 .service-wrap .service-contents .service2 .service-flame .design-img2 {
   position: absolute;
-  bottom: 10px;
-  right: 25%;
+  bottom: -45px;
+  right: 0;
 }
 @media screen and (max-width: 1024px) {
   .service-wrap .service-contents {
@@ -419,9 +428,6 @@ body {
   .service-wrap .service-contents .service1 {
     height: 330px;
     position: relative;
-  }
-  .service-wrap .service-contents .service1 .service-flame {
-    width: 100%;
   }
   .service-wrap .service-contents .service1 .service-text1 {
     position: absolute;
@@ -438,15 +444,11 @@ body {
     position: absolute;
     bottom: -180px;
     right: 8%;
-    width: 32%;
   }
   .service-wrap .service2 {
     height: 486px;
     margin-top: 120px;
     position: relative;
-  }
-  .service-wrap .service2 .service-flame {
-    width: 100%;
   }
   .service-wrap .service2 h3 {
     font-size: 25px;
@@ -469,7 +471,6 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 20.31%;
   }
 }
 

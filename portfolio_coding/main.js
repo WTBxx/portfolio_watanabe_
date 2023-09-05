@@ -77,7 +77,7 @@
     function scroll_effect() {
         var tt = $(window).scrollTop();
         var hh = $(window).height();
-        $('flame').each(function () {
+        $('.service-flame>.flame').each(function () {
             var yy = $(this).offset().top + 400;//効果発生開始タイミングを操作したい場合は数値を変更する
             if (tt > yy - hh) {
                 $(this).addClass('done');
