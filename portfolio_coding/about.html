@@ -161,7 +161,7 @@
                     <h2>わたしの強み</h2>
                     <div class="forte-contents">
                         <div class="forte1">
-                            <div class="forte-flame"><img src="images/forte1-2.png" alt=""></div>
+                            <div class="forte-flame"><img src="images/forte1-2.png" alt=" " class="flame"></div>
                             <div class="forte-text">
                                 <h3>傾聴力</h3>
                                 <p>対面での接客経験、非対面での接客経験からお客様のご要望や意図を汲み取る為にしっかりヒアリングを行うことができます。培った傾聴力を活かしてお客様のニーズに沿ったデザインの提案を出来るよう努めます。
@@ -171,7 +171,7 @@
                         </div>
 
                         <div class="forte2">
-                            <div class="forte-flame"><img src="images/forte2-1.png" alt=""></div>
+                            <div class="forte-flame"><img src="images/forte2-1.png" alt="" class="flame"></div>
                             <div class="forte-text">
                                 <h3>関係構築力</h3>
                                 <p>お客様とのコミュニケーションはもちろん、好きを活かして貪欲に現場に足を運び、知り、そこで出会うひととのコミュニケーションを大事にしていました。お客様の商品やサービスをしっかり知ったうえでコミュニケーションを取り、良好な関係構築を目指します。
@@ -186,7 +186,7 @@
                     <h2>わたしを彩るもの</h2>
                     <div class="favorite-contents">
                         <div class="favorite1">
-                            <div class="favorite-flame"><img src="images/favorite1-1.png" alt=""></div>
+                            <div class="favorite-flame"><img src="images/favorite1-1.png" alt="" class="flame"></div>
                             <div class="favorite-text">
                                 <h3>音楽</h3>
                                 <p>インディーズバンドをよく聴きます。音楽とライブハウスとその場所にいる人たち全部ひっくるめてあの空間がだいすきです。サブスクも使用しますがCDで聴きたい派です。</p>
@@ -194,7 +194,7 @@
                             <div class="favorite-img1"><img src="images/favorite1-2.png" alt=""></div>
                         </div>
                         <div class="favorite2">
-                            <div class="favorite-flame"><img src="images/favorite2-1.png" alt=""></div>
+                            <div class="favorite-flame"><img src="images/favorite2-1.png" alt="" class="flame"></div>
                             <div class="favorite-text">
                                 <h3>古着</h3>
                                 <p>詳しくはないですが、ミリタリーアイテムが特に好きです。気づいたら持っているパンツの9割が軍モノになっていました。古着屋さん特有の匂いも好きです。</p>
@@ -233,71 +233,9 @@
 
     <div class="footer">© chika watanabe</div>
 
-    <script>
-        $(function () {
-            $('.hamburger').on('click', function () {
-                $('.sp-nav').fadeToggle();
-                $('.hamburger').toggleClass('open');
-            });
-        });
-        $(function () {
-            function sliderSetting() {
+    <!--JSファイル-->
 
-                var width = $(window).width();
-
-                if (width <= 800) {
-                    $('.skill').not('.slick-initialized').slick({
-                        autoplay: true,
-                        infinite: true,
-                        speed: 500,
-                        fade: true,
-                        dots: true,
-                        cssEase: 'linear',
-                        arrows: false
-                    });
-                } else {
-                    $('.skill.slick-initialized').slick('unslick');
-                }
-            }
-            sliderSetting();
-            $(window).resize(function () {
-                sliderSetting();
-            });
-        });
-        $(function () {
-            $(window).scroll(function () {
-                scroll_effect();
-            });
-        });
-        //ふわっとスクロール
-        function scroll_effect() {
-            var tt = $(window).scrollTop();
-            var hh = $(window).height();
-            $('.forte-flame,.favorite-flame').each(function () {
-                var yy = $(this).offset().top + 400;//効果発生開始タイミングを操作したい場合は数値を変更する
-                if (tt > yy - hh) {
-                    $(this).addClass('done');
-                }
-            });
-        }
-        $(function () {
-            $(window).on('load scroll', function () {
-                $('.still-date,.still-text,.feature-date,.feature-text').each(function () {
-                    //ターゲットの位置を取得
-                    var target = $(this).offset().top;
-                    //スクロール量を取得
-                    var scroll = $(window).scrollTop();
-                    //ウィンドウの高さを取得
-                    var height = $(window).height();
-                    //ターゲットまでスクロールするとフェードインする
-                    if (scroll > target - height) {
-                        //クラスを付与
-                        $(this).addClass('active');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
