@@ -77,7 +77,7 @@
     function scroll_effect() {
         var tt = $(window).scrollTop();
         var hh = $(window).height();
-        $('.service-flame>.flame').each(function () {
+        $('.flame').each(function () {
             var yy = $(this).offset().top + 400;//効果発生開始タイミングを操作したい場合は数値を変更する
             if (tt > yy - hh) {
                 $(this).addClass('done');
@@ -111,23 +111,6 @@
             sliderSetting();
         });
     });
-    $(function () {
-        $(window).scroll(function () {
-            scroll_effect();
-        });
-    });
-
-    //ふわっとスクロール
-    function scroll_effect() {
-        var tt = $(window).scrollTop();
-        var hh = $(window).height();
-        $('.forte-flame,.favorite-flame').each(function () {
-            var yy = $(this).offset().top + 400;//効果発生開始タイミングを操作したい場合は数値を変更する
-            if (tt > yy - hh) {
-                $(this).addClass('done');
-            }
-        });
-    }
 
     $(function () {
         $(window).on('load scroll', function () {

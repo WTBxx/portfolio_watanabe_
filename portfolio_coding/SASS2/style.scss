@@ -461,8 +461,9 @@ background-repeat: repeat;
 
             .design-img1{
                 position: absolute;
-                bottom: -45px;
-                right: 0;
+                bottom: -30px;
+                right: 4%;
+                width: 37%;
             }
 
         }
@@ -499,8 +500,9 @@ background-repeat: repeat;
     
                 .design-img2{
                     position: absolute;
-                    bottom: -45px;
-                    right: 0;    
+                    bottom: -30px;
+                    right: 14%;
+                    width: 34.6%;
                 }
             }      
         }
@@ -534,6 +536,7 @@ background-repeat: repeat;
                 position: absolute;
                 bottom: -180px;
                 right: 8%;    
+                width: 35.29%;
             }
         }
 
@@ -568,7 +571,8 @@ background-repeat: repeat;
             .design-img2{
                 position: absolute;
                 bottom: 0;
-                right: 0;    
+                right: 0;
+                width: 32.35%; 
             }
     }
 }
@@ -692,6 +696,7 @@ background-repeat: repeat;
         margin-top: 88px;
         @media screen and (max-width: 767px){
         line-height: $line-height;
+        margin-top: 42px;
         }
     }
 
@@ -752,6 +757,7 @@ background-repeat: repeat;
         }
 
         .contact-button {
+            margin: 58px auto 0 auto;
             width: auto;
         }
     }

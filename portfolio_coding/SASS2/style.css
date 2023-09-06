@@ -406,8 +406,9 @@ body {
 }
 .service-wrap .service-contents .service1 .design-img1 {
   position: absolute;
-  bottom: -45px;
-  right: 0;
+  bottom: -30px;
+  right: 4%;
+  width: 37%;
 }
 .service-wrap .service-contents .service2 .service-flame {
   position: relative;
@@ -437,8 +438,9 @@ body {
 }
 .service-wrap .service-contents .service2 .service-flame .design-img2 {
   position: absolute;
-  bottom: -45px;
-  right: 0;
+  bottom: -30px;
+  right: 14%;
+  width: 34.6%;
 }
 @media screen and (max-width: 1024px) {
   .service-wrap .service-contents {
@@ -464,6 +466,7 @@ body {
     position: absolute;
     bottom: -180px;
     right: 8%;
+    width: 35.29%;
   }
   .service-wrap .service2 {
     height: 486px;
@@ -491,6 +494,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 32.35%;
   }
 }
 
@@ -594,6 +598,7 @@ body {
 @media screen and (max-width: 767px) {
   .contact-wrap p {
     line-height: 2.333;
+    margin-top: 42px;
   }
 }
 .contact-wrap .br-sp {
@@ -644,6 +649,7 @@ body {
     display: none;
   }
   .contact-wrap .contact-button {
+    margin: 58px auto 0 auto;
     width: auto;
   }
 }
