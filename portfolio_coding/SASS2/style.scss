@@ -628,7 +628,7 @@ background-repeat: repeat;
             img {
                  height: auto;
                  left: 0;
-                 width: 100%;
+                 max-width: 100%;
             }
 
             img:last-of-type {
