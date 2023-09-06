@@ -469,8 +469,7 @@ body {
     width: 35.29%;
   }
   .service-wrap .service2 {
-    height: 486px;
-    margin-top: 120px;
+    margin-top: 30px;
     position: relative;
   }
   .service-wrap .service2 h3 {
@@ -501,6 +500,11 @@ body {
 .work-wrap {
   margin-top: 205px;
   /*-----*/
+}
+@media screen and (max-width: 1024px) {
+  .work-wrap {
+    margin-top: 124px;
+  }
 }
 .work-wrap .slider {
   display: flex;
