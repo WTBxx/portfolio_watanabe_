@@ -959,23 +959,25 @@ h3 {
     margin-top: 10px;
   }
   .forte-wrap .forte-contents .forte1 {
+    margin-top: 35px;
     position: relative;
   }
   .forte-wrap .forte-contents .forte1 .forte-text {
     position: absolute;
     width: 74.67%;
+    top: 60%;
   }
   .forte-wrap .forte-contents .forte1 .forte-text h3 {
     font-size: 20px;
   }
   .forte-wrap .forte-contents .forte1 .forte-text p {
-    margin-top: 30px;
+    margin-top: 22px;
     line-height: 2.023;
     font-size: 14px;
   }
   .forte-wrap .forte-contents .forte1 .forte-img1 {
     position: absolute;
-    bottom: 20px;
+    bottom: -12px;
     right: 8%;
     width: 23.53%;
   }

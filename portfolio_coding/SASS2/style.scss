@@ -1125,18 +1125,20 @@ h3{
             margin-top: 10px;
 
             .forte1{
+                margin-top: 35px;
                 position: relative;
 
                 .forte-text{
                     position: absolute;
                     width: 74.67%;
+                    top: 60%;
 
                     h3{
                         font-size: 20px;
                     }
 
                     p{
-                    margin-top: 30px;
+                    margin-top: 22px;
                     line-height: 2.023;
                     font-size: $font-size-sp;
                     }
@@ -1144,7 +1146,7 @@ h3{
 
                 .forte-img1{
                     position: absolute;
-                    bottom: 20px;
+                    bottom: -12px;
                     right: 8%;  
                     width: 23.53%;
                 }
