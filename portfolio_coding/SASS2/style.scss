@@ -18,6 +18,10 @@ $line-height: 2.333;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 767px){
+        background-image:url(../images/loading_sp.png)
+    }
 }
 
 .loader .txt {
@@ -309,12 +313,12 @@ background-repeat: repeat;
     }
 
     h3{
-        font-size: 1.83vw;
+        font-size: 1.8vw;
         margin: 74px 1.46% 73px 0;
     }
 
     .name p{
-        font-size: 1.09vw;
+        font-size: 1.0vw;
         color: #757575;
         margin: 81px 4.83% 81px 0;
     }
@@ -1609,12 +1613,12 @@ h3{
         }
     }
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 1024px){
         margin: 45px auto auto auto;
 
         h2{
             font-size: 22px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .works-view-category{
@@ -1644,7 +1648,7 @@ h3{
 
                 .works-view-title{
                     margin-bottom: 10px;
-                    padding-left: 0.8%;
+                    padding-left: 3%;
                 }
 
                 .works-view-item-text{

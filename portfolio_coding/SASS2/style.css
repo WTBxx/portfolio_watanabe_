@@ -12,6 +12,11 @@
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .loader {
+    background-image: url(../images/loading_sp.png);
+  }
+}
 
 .loader .txt {
   color: #554945;
@@ -277,11 +282,11 @@ body {
   padding-right: 2.32%;
 }
 .about-wrap h3 {
-  font-size: 1.83vw;
+  font-size: 1.8vw;
   margin: 74px 1.46% 73px 0;
 }
 .about-wrap .name p {
-  font-size: 1.09vw;
+  font-size: 1vw;
   color: #757575;
   margin: 81px 4.83% 81px 0;
 }
@@ -1345,13 +1350,13 @@ h3 {
   border-right: 1px solid;
   transform: rotate(45deg);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .works-view-wrap {
     margin: 45px auto auto auto;
   }
   .works-view-wrap h2 {
     font-size: 22px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .works-view-wrap .works-view-category {
     display: flex;
@@ -1377,7 +1382,7 @@ h3 {
   }
   .works-view-wrap .works-view-contents .works-view-item-wrap .works-view-title {
     margin-bottom: 10px;
-    padding-left: 0.8%;
+    padding-left: 3%;
   }
   .works-view-wrap .works-view-contents .works-view-item-wrap .works-view-item-text {
     margin-bottom: 10px;
