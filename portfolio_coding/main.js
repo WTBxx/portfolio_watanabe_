@@ -1,7 +1,6 @@
 
 //!--ローディング
 
-    $(function () {
         // ローダー終了
         function end_loader() {
             $('.loader').fadeOut(800);
@@ -30,7 +29,6 @@
                 end_loader();
             }, 4500)
         })
-    })
 
     //ハンバーガーメニュー
 
