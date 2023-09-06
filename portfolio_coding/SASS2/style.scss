@@ -93,7 +93,7 @@ background-repeat: repeat;
 
     .toppagebutton{
         writing-mode: vertical-rl;
-        margin-top: 350px;
+        margin-top: 420px;
 
         .arrow{
             position: relative;
@@ -844,11 +844,8 @@ h3{
     }
 }
 
-.name-contents{
-    width: 82.24%;
-}
-
 .skill-wrap{
+    
     h2{
         font-size: 30px;
         margin-top: 200px;
@@ -1006,6 +1003,10 @@ h3{
 }
 
 .forte-wrap{
+
+    img{
+        max-width: 100%;
+    }
 
     h2{
         margin-top: 200px;
@@ -1169,6 +1170,10 @@ h3{
 }
 
 .favorite-wrap{
+
+    img{
+        max-width: 100%;
+    }
 
     h2{
         margin-top: 200px;
@@ -1434,7 +1439,7 @@ h3{
 
         .works-contents{
             margin-top: 50px;
-            margin-right: 4.67%;
+            margin-right: auto;
 
             .works-category{
                 display: flex;
@@ -1460,7 +1465,7 @@ h3{
 /*--制作実績詳細--*/
 
 .works-view-wrap{
-    margin-top: 95px;
+    margin: 95px auto auto auto;
 
     img{
         max-width: 100%;
@@ -1572,7 +1577,6 @@ h3{
         /*--右矢印--*/
         .arrow-next {
             position: relative;
-            padding-left: 30px;
         }    
 
         .arrow-next::before { /* 背景の表示設定 */
@@ -1604,7 +1608,7 @@ h3{
     }
 
     @media screen and (max-width: 767px){
-        margin: auto;
+        margin: 45px auto auto auto;
 
         h2{
             font-size: 22px;
