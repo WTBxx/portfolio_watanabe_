@@ -327,15 +327,17 @@ body {
   }
 }
 @media screen and (max-width: 900px) {
+  .about-wrap {
+    margin-top: 130px;
+  }
   .about-wrap .about-contents {
     display: block;
-    margin-top: 24px;
     margin: auto;
   }
   .about-wrap .name {
     justify-content: left;
     border-right: none;
-    margin-top: 22px;
+    margin-top: 35px;
     width: 85.33%;
     padding-right: 0;
   }
@@ -347,6 +349,7 @@ body {
     margin: 0;
     border-right: none;
     font-size: 14px;
+    margin-top: 4px;
   }
   .about-wrap .about-text {
     width: 85.33%;
@@ -1398,18 +1401,37 @@ h3 {
   text-align: left;
   max-width: 853px;
 }
-.contactpage-wrap form dl dt {
-  padding: 10px 0;
-  float: left;
-  clear: both;
+.contactpage-wrap .contact-form dl {
+  display: flex;
+  flex-wrap: wrap;
 }
-.contactpage-wrap form dl dd {
-  padding: 10px 0;
-  width: 57%;
+@media screen and (max-width: 767px) {
+  .contactpage-wrap .contact-form dl {
+    display: block;
+    text-align: center;
+  }
 }
-.contactpage-wrap dt {
+.contactpage-wrap .contact-form dt {
   font-weight: normal;
-  width: 43%;
+  width: 25%;
+  padding: 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .contactpage-wrap .contact-form dt {
+    width: auto;
+    text-align: left;
+    padding-left: 10%;
+  }
+}
+.contactpage-wrap .contact-form dd {
+  width: 75%;
+  margin-inline-start: 0;
+  padding: 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .contactpage-wrap .contact-form dd {
+    width: auto;
+  }
 }
 .contactpage-wrap span {
   color: #e86464;
@@ -1418,6 +1440,12 @@ h3 {
   background-color: #fff;
   border-radius: 0.2em;
   padding: 0.5em;
+  width: 65%;
+}
+@media screen and (max-width: 767px) {
+  .contactpage-wrap input, .contactpage-wrap textarea {
+    width: 80%;
+  }
 }
 .contactpage-wrap .contactpage-button {
   width: 300px;
