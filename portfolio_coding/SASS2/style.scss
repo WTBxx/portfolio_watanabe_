@@ -244,6 +244,7 @@ background-repeat: repeat;
     width: 75.84%;
     margin-left:auto;
     text-align: center;
+    padding: 0 1%;
 
     @media screen and (max-width: 767px){
         margin: 0 auto;
@@ -1060,7 +1061,7 @@ h3{
                 position: absolute;
                 bottom: 60px;
                 right: 12%;    
-                width: 20.31%;
+                width: 26.4%;
             }
         }
 
@@ -1105,7 +1106,7 @@ h3{
                 position: absolute;
                 bottom: 30px;
                 right: 15%;    
-                width: 20.31%;
+                width: 38.2%;
             }
         }
     }
@@ -1113,6 +1114,7 @@ h3{
     @media screen and (max-width: 1024px){
         .forte-contents{
             display: block;
+            margin-top: 10px;
 
             .forte1{
                 position: relative;
@@ -1134,9 +1136,9 @@ h3{
 
                 .forte-img1{
                     position: absolute;
-                    bottom: 0;
-                    right: 0;  
-                    width: 21.33%;
+                    bottom: 20px;
+                    right: 8%;  
+                    width: 23.53%;
                 }
             }
 
@@ -1160,9 +1162,9 @@ h3{
 
                 .forte-img2{
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 29.33%;
+                    top: 5px;
+                    left: 7%;
+                    width: 32.35%;
                 }  
             }
         }
@@ -1230,7 +1232,7 @@ h3{
                 position: absolute;
                 bottom: 0;
                 right: 0;  
-                width: 17.25%;
+                width: 29.6%;
             }
         }
 
@@ -1277,7 +1279,7 @@ h3{
                 position: absolute;
                 bottom: 0;
                 right: 0;  
-                width: 34.51%;
+                width: 23.8%;
             }
         }
     }
@@ -1307,9 +1309,9 @@ h3{
 
                 .favorite-img1{
                     position: absolute;
-                    bottom: 0;
-                    right: 0;  
-                    width: 26.67%;
+                    bottom: -37px;
+                    right: 9%;  
+                    width: 29.41%;
                 }
             }
 
@@ -1333,9 +1335,9 @@ h3{
 
                 .favorite-img2{
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 21.33%;
+                    top: -26px;
+                    left: 9%;
+                    width: 23.53%;
                 }
             }
         }
@@ -1550,7 +1552,6 @@ h3{
         /*--左矢印--*/
         .arrow-prev {
             position: relative;
-            padding-left: 30px;
           }       
 
         .arrow-prev::before { /* 背景の表示設定 */
@@ -1559,7 +1560,7 @@ h3{
             margin: auto;
             top: 0;
             bottom: 0;
-            left: 3px;
+            left: -26px;
             width: 23px; /* 横幅 */
             height: 23px; /* 高さ */
             border-radius: 50%; /* 角の丸み */
@@ -1572,7 +1573,7 @@ h3{
             margin: auto;
             top: 0;
             bottom: 0;
-            left: 12px;
+            left: -17px;
             width: 10px;
             height: 10px;
             border-top: 1px solid;
