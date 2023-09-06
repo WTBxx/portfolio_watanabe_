@@ -233,6 +233,14 @@ body {
   font-size: 1.93vw;
   line-height: 2;
 }
+.concept-wrap p .br-sp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .concept-wrap p .br-sp {
+    display: block;
+  }
+}
 @media screen and (max-width: 767px) {
   .concept-wrap {
     margin-top: auto;
@@ -241,10 +249,12 @@ body {
     line-height: 2.191;
     margin-bottom: 44px;
     font-size: 28px;
+    text-align: left;
   }
   .concept-wrap p {
     line-height: 2;
     font-size: 14px;
+    text-align: left;
   }
 }
 
@@ -572,6 +582,19 @@ body {
 .contact-wrap p {
   margin-top: 88px;
 }
+@media screen and (max-width: 767px) {
+  .contact-wrap p {
+    line-height: 2.333;
+  }
+}
+.contact-wrap .br-sp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .contact-wrap .br-sp {
+    display: block;
+  }
+}
 .contact-wrap .contact-button {
   width: 300px;
   margin: 93px auto 0 auto;
@@ -612,7 +635,7 @@ body {
     display: none;
   }
   .contact-wrap .contact-button {
-    margin: 93px auto 0 auto;
+    width: auto;
   }
 }
 
@@ -1465,9 +1488,27 @@ h3 {
   right: 0;
   top: 180px;
 }
+@media screen and (max-width: 767px) {
+  .thanks-wrap .thanks-img1 {
+    width: 47.73%;
+  }
+}
 .thanks-wrap p {
   line-height: 2.333;
   margin-top: 150px;
+}
+@media screen and (max-width: 767px) {
+  .thanks-wrap p {
+    margin-top: 60px;
+  }
+}
+.thanks-wrap p .br-sp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .thanks-wrap p .br-sp {
+    display: block;
+  }
 }
 
 .thankspage-button {

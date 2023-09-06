@@ -260,6 +260,13 @@ background-repeat: repeat;
     p{
         font-size: 1.93vw;
         line-height: 2.00;
+
+        .br-sp{
+            display: none;
+            @media screen and (max-width: 767px){
+                display: block;
+            }
+        }
     }
 
     @media screen and (max-width: 767px){
@@ -269,11 +276,13 @@ background-repeat: repeat;
             line-height: 2.191;
             margin-bottom: 44px;
             font-size: 28px;
+            text-align: left;
         }
 
         p{
             line-height: 2;
             font-size: 14px;
+            text-align: left;
         }
     }
 }
@@ -674,6 +683,16 @@ background-repeat: repeat;
 
     p{
         margin-top: 88px;
+        @media screen and (max-width: 767px){
+        line-height: $line-height;
+        }
+    }
+
+    .br-sp{
+        display: none;
+        @media screen and (max-width: 767px){
+            display: block;
+        }
     }
 
     .contact-button{
@@ -726,7 +745,7 @@ background-repeat: repeat;
         }
 
         .contact-button {
-            margin: 93px auto 0 auto;
+            width: auto;
         }
     }
 }
@@ -1759,11 +1778,24 @@ h3{
         position: absolute;
         right: 0;
         top:180px;
+        @media screen and (max-width: 767px){
+            width: 47.73%;
+        }
     }
 
     p{
         line-height: $line-height;
         margin-top: 150px;
+        @media screen and (max-width: 767px){
+            margin-top: 60px;
+        }
+
+        .br-sp{
+            display: none;
+            @media screen and (max-width: 767px){
+                display: block;
+            }
+        }
     }
 }
 
