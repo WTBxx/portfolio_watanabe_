@@ -86,7 +86,7 @@ body {
 }
 .toppagebutton-wrap .toppagebutton {
   writing-mode: vertical-rl;
-  margin-top: 500px;
+  margin-top: 350px;
 }
 .toppagebutton-wrap .toppagebutton .arrow {
   position: relative;
@@ -1441,9 +1441,21 @@ h3 {
 }
 
 /*--サンクスページ--*/
+.thanks-wrap {
+  margin: 0 auto;
+}
+.thanks-wrap img {
+  max-width: 100%;
+}
 .thanks-wrap .thanks-text {
-  font-size: 30px;
+  font-size: 2.19vw;
   margin-top: 251px;
+  font-family: "YuMincho", "游明朝体", "Yu Mincho", "游明朝";
+}
+@media screen and (max-width: 767px) {
+  .thanks-wrap .thanks-text {
+    font-size: 5vw;
+  }
 }
 .thanks-wrap .thanks-img {
   position: relative;
@@ -1460,7 +1472,7 @@ h3 {
 
 .thankspage-button {
   width: 300px;
-  margin: 93px 276px 0 276px;
+  margin: 93px auto 0 auto;
   position: relative;
 }
 .thankspage-button img {
