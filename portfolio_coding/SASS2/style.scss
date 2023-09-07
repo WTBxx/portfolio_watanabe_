@@ -660,6 +660,10 @@ background-repeat: repeat;
     }
 
         @media screen and (max-width: 767px){
+            .slider{
+                display: block;
+            }
+            
             .slider .slider-item{
                 img{
                 position: static;

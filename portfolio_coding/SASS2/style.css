@@ -569,6 +569,9 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .work-wrap .slider {
+    display: block;
+  }
   .work-wrap .slider .slider-item img {
     position: static;
     height: auto;
