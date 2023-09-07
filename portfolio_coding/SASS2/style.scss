@@ -92,7 +92,7 @@ background-repeat: repeat;
     top: 0;
     right: 0;
     @media screen and (max-width: 767px){
-        width: 6%;
+        width: 8%;
     }
 
     .toppagebutton{
@@ -257,13 +257,13 @@ background-repeat: repeat;
     margin-top: -300px;
     
     h1{
-        font-size: 3.66vw;
+        font-size: 38px;
         line-height: 1.58;
         margin-bottom: 61px;
     }
 
     p{
-        font-size: 1.93vw;
+        font-size: 20px;
         line-height: 2.00;
 
         .br-sp{
@@ -758,7 +758,12 @@ background-repeat: repeat;
 
         .contact-button {
             margin: 58px auto 0 auto;
-            width: auto;
+            width: 78.79%;
+
+            .contact-text{
+                top:11px;
+                width: 100%;
+            }
         }
     }
 }

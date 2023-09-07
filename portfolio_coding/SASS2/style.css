@@ -86,7 +86,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .toppagebutton-wrap {
-    width: 6%;
+    width: 8%;
   }
 }
 .toppagebutton-wrap .toppagebutton {
@@ -231,12 +231,12 @@ body {
   margin-top: -300px;
 }
 .concept-wrap h1 {
-  font-size: 3.66vw;
+  font-size: 38px;
   line-height: 1.58;
   margin-bottom: 61px;
 }
 .concept-wrap p {
-  font-size: 1.93vw;
+  font-size: 20px;
   line-height: 2;
 }
 .concept-wrap p .br-sp {
@@ -649,7 +649,11 @@ body {
   }
   .contact-wrap .contact-button {
     margin: 58px auto 0 auto;
-    width: auto;
+    width: 78.79%;
+  }
+  .contact-wrap .contact-button .contact-text {
+    top: 11px;
+    width: 100%;
   }
 }
 
