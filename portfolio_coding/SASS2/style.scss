@@ -1671,7 +1671,14 @@ h3{
                 }
             }
 
-            .works-view-item-wrap-sp{
+            .works-view-item-wrap-sp1{
+                display: flex;
+                width: 48%;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+
+            .works-view-item-wrap-sp2{
                 display: flex;
                 width: 70%;
                 justify-content: space-between;
