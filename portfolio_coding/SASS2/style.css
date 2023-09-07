@@ -1269,7 +1269,7 @@ h3 {
 }
 .works-view-wrap .works-view-contents .works-view-item-wrap {
   text-align: left;
-  width: 19.37%;
+  width: 24%;
   height: 151px;
   border-right: #c7c7c7 solid 1px;
 }
@@ -1402,7 +1402,7 @@ h3 {
   }
   .works-view-wrap .works-view-contents .works-view-item-wrap-sp {
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: space-between;
     margin: 0 auto;
   }
