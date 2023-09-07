@@ -451,15 +451,14 @@ body {
     height: 330px;
     position: relative;
   }
-  .service-wrap .service-contents .service1 .service-text1 {
+  .service-wrap .service-contents .service1 .service-flame .service-text1 {
     position: absolute;
-    width: 39.47%;
-    transform: translate(-50%);
+    width: 56%;
   }
-  .service-wrap .service-contents .service1 .service-text1 h3 {
-    font-size: 25px;
+  .service-wrap .service-contents .service1 .service-flame .service-text1 h3 {
+    font-size: 20px;
   }
-  .service-wrap .service-contents .service1 .service-text1 p {
+  .service-wrap .service-contents .service1 .service-flame .service-text1 p {
     text-align: left;
   }
   .service-wrap .service-contents .design-img1 {
@@ -468,28 +467,21 @@ body {
     right: 8%;
     width: 35.29%;
   }
-  .service-wrap .service2 {
+  .service-wrap .service-contents .service2 {
     margin-top: 30px;
     position: relative;
   }
-  .service-wrap .service2 h3 {
-    font-size: 25px;
-  }
-  .service-wrap .service2 p {
-    text-align: left;
-  }
-  .service-wrap .service-text2 {
+  .service-wrap .service-contents .service2 .service-flame .service-text2 {
     position: absolute;
-    width: 39.47%;
-    transform: translate(-50%);
+    width: 56%;
   }
-  .service-wrap .service-text2 h3 {
-    font-size: 25px;
+  .service-wrap .service-contents .service2 .service-flame .service-text2 h3 {
+    font-size: 20px;
   }
-  .service-wrap .service-text2 p {
+  .service-wrap .service-contents .service2 .service-flame .service-text2 p {
     text-align: left;
   }
-  .service-wrap .design-img2 {
+  .service-wrap .service-contents .service2 .design-img2 {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1108,7 +1100,7 @@ h3 {
     font-size: 20px;
   }
   .favorite-wrap .favorite-contents .favorite1 .favorite-text p {
-    margin-top: 38px;
+    margin-top: 27px;
     line-height: 2.333;
     font-size: 14px;
   }

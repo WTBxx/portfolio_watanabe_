@@ -517,17 +517,18 @@ background-repeat: repeat;
                 height: 330px;
                 position: relative;
 
-                .service-text1{
-                position: absolute;
-                width: 39.47%;
-                transform: translate(-50%);
+                .service-flame{
+                    .service-text1{
+                    position: absolute;
+                    width: 56%;
 
-                    h3{
-                    font-size: 25px;
-                    }
+                        h3{
+                        font-size: 20px;
+                        }
 
-                    p{
-                    text-align: left;
+                        p{
+                        text-align: left;
+                        }
                     }
                 }
             }
@@ -538,41 +539,34 @@ background-repeat: repeat;
                 right: 8%;    
                 width: 35.29%;
             }
-        }
 
             .service2{
                 margin-top: 30px;
                 position: relative;
 
-                h3{
-                    font-size: 25px;
+                .service-flame{
+                    .service-text2{
+                        position: absolute;
+                        width: 56%;
+
+                        h3{
+                            font-size: 20px;
+                        }
+
+                       p{
+                            text-align: left;
+                        }
+                    }
                 }
 
-                p{
-                    text-align: left;
+                .design-img2{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 32.35%; 
                 }
             }
-
-            .service-text2{
-                position: absolute;
-                width: 39.47%;
-                transform: translate(-50%);
-
-                h3{
-                    font-size: 25px;
-                }
-
-                p{
-                    text-align: left;
-                }
-            }
-
-            .design-img2{
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                width: 32.35%; 
-            }
+        }
     }
 }
 
@@ -663,7 +657,7 @@ background-repeat: repeat;
             .slider{
                 display: block;
             }
-            
+
             .slider .slider-item{
                 img{
                 position: static;
@@ -1315,7 +1309,7 @@ h3{
                     }
 
                     p{
-                        margin-top: 38px;
+                        margin-top: 27px;
                         line-height: $line-height;
                         font-size: $font-size-sp;
                     }
